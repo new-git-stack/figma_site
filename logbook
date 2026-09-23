@@ -1,0 +1,35 @@
+
+ WEEK 12
+
+ Daily Summary
+
+ Monday:
+  Started a new personal project based on a selected Figma template. The focus was on interpreting and planning out the visual layout, identifying image assets, fonts, and section structures to be replicated in React.
+
+ Tuesday:
+  Set up the base project using Vite and React. Scaffolded the `App.jsx` and routing, and created the main `Home` page where the entire content would be placed. Imported all Figma-based image assets into the project.
+
+ Wednesday:
+  Focused on building the hero section of the page, including layered background images, heading text, navigation links, and a prominent image of a woman on the right side. Flexbox and CSS positioning were heavily used.
+
+ Thursday:
+  Implemented mid-page sections including category cards, top destinations, booking steps, and a testimonial carousel — all based closely on the Figma layout. Carefully styled backgrounds using `backgroundImage` in JSX inline styles.
+
+ Friday:
+  Finished off with the footer, sponsor logos, and a styled subscription section. Ensured that icons, social media links, and layout responsiveness followed the original Figma design closely. Debugged layout issues and completed the polish.
+
+---
+
+ Weekly Narrative
+
+Week 12 marked a shift in our development focus — from logic-heavy React apps to design-driven development. This personal project involved selecting a Figma UI template and rebuilding it into a working React application using Vite. The goal was to practice translating UI design into component-based frontend structure while reinforcing layout and styling skills.
+
+The design selected was visually rich, with layered backgrounds, high-resolution images, and multiple thematic sections such as “Top Destinations,” “Book Your Trip,” “Testimonials,” and more. Starting with a clean Vite + React setup, the `App.jsx` file routed the homepage as the central view, and `Home.jsx` became the core container for all visual elements.
+
+A significant challenge this week was managing the many imported images from the design. More than 40 images were handled across various sections — from destinations like Rome and Greece to interface elements like logos, icons, app store badges, and backgrounds. To keep things organized, each image was imported at the top of the `Home.jsx` file and embedded using inline `backgroundImage` styles or `img` tags.
+
+The actual layout relied heavily on CSS Flexbox, precise positioning, and custom styles to achieve the Figma-authentic look. Each content section (e.g., service categories, booking process, customer testimonials) was treated as a standalone block, mimicking the modular component approach even though everything was coded into a single `Home` file.
+
+Toward the end of the week, attention shifted to fine-tuning — ensuring that spacing, typography, and icon alignment matched the design. The final touch was the footer, complete with a marquee text, social links, and calls-to-action.
+
+By completing this task, we gained hands-on experience with design fidelity, responsive layout building, image asset management, and style integration. It also served as great preparation for future portfolio-level projects and demonstrated how design and development align in frontend work.

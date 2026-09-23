@@ -1,0 +1,403 @@
+import Background from '/src/images/background.png'
+import Logo from '/src/images/log.png'
+import Play from '/src/images/Play_button.png'
+import Woman from '/src/images/Image.svg'
+import './Home.css'
+import Stroke from '/src/images/Decore.png'
+import category_background from '/src/images/category_background.png'
+import customization from '/src/images/customization.png'
+import flights from '/src/images/flights.png'
+import rectangle from '/src/images/Rectangle.png'
+import weather from '/src/images/weather.png'
+import events from '/src/images/mic.png'
+import Rome from '/src/images/Rome.png'
+import Europe from '/src/images/Europe.png'
+import London from '/src/images/London.jpg'
+import Navigate from '/src/images/Navigate.png'
+import Spiral from '/src/images/Spiral.png'
+import Greece from '/src/images/Greece.jpg'
+import Leaf from '/src/images/LEAF.png'
+import Map from '/src/images/map_icon.png'
+import Send from '/src/images/send.png'
+import Building from '/src/images/building.png'
+import Heart from '/src/images/heart.png'
+import Destination from '/src/images/choose_destination.png'
+import Payment from '/src/images/payment.png'
+import Airport from '/src/images/airport.png'
+import Castle from '/src/images/castle.png'
+import Mike from '/src/images/mike.png'
+import Axon from '/src/images/axon.png'
+import Jetstar from '/src/images/jetstar.png'
+import Expedia from '/src/images/expedia.png'
+import Qantas from '/src/images/qantas.png'
+import Alitalia from '/src/images/alitalia.png'
+import Jadoo_footer from '/src/images/jadoo_footer.png'
+import Facebook from '/src/images/facebook.png'
+import Instagram from '/src/images/instagram.png'
+import Twitter from '/src/images/twitter.png'
+import Play_store from '/src/images/google_play.png'
+import Apple_store from '/src/images/apple_store.png'
+import Pagination from '/src/images/pagination.png'
+import Slide from '/src/images/slide.png'
+import Subscribe from '/src/images/subscribe.png'
+import Subscribe_edge from '/src/images/subscribe_edge.png'
+import Subscribe_background from '/src/images/subscribe_background.png'
+import Mail from '/src/images/mail.png'
+
+
+function Home () {
+    const mainBackground = { 
+        backgroundImage: `url(${Background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    }
+
+    const stroke = {
+        backgroundImage: `url(${Stroke})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '80%',
+        backgroundPosition: '150% 30%',
+    }
+
+    const Rectangle = {
+        backgroundImage: `url(${rectangle})`,
+        backgroundPosition: 'left',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '5%',
+        backgroundPosition: '29.3% 66%',
+    }
+
+    const Category_style = {
+        backgroundImage: `url(${category_background})`,
+        backgroundPosition: 'right',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '10%',
+        backgroundPosition: '1650px 0px'
+    }
+
+    const Rome_style = {
+        backgroundImage: `url(${Rome})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '150%',
+        backgroundPosition: '',
+    }
+
+    const Europe_style = {
+        backgroundImage: `url(${Europe})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '150%',
+        backgroundPosition: '',
+    }
+
+    const London_style = {
+        backgroundImage: `url(${London})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '150%',
+        backgroundPosition: '',
+    }
+
+    const Spiral_style = {
+        backgroundImage: `url(${Spiral})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '150px',
+        backgroundPosition: '1400px 200px'
+    }
+
+    const Subscribe_style = {
+        backgroundImage: `url(${Subscribe_background})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '1500px',
+        backgroundPosition: '100px 100px',
+    }
+
+    return (
+        <div id='entirety'>
+            <div style={mainBackground} className="background">
+                <div id="header">
+                    <img src={Logo} className="logo" alt="Jadoo logo" />
+                    <div id='pages'>
+                        <a href="#Destinations">Destinations</a>
+                        <a href="#Hotels">Hotels</a>
+                        <a href="#Flights">Flights</a>
+                        <a href="#Bookings">Bookings</a>
+                        <a href="#Login">Login</a>
+                        <a href="#Sign up" id='Sign'>Sign up</a>
+                        <a href="#En">En</a>
+                    </div>
+                </div>
+                <div id='Content'>
+                    <div id='Text'>
+                        <div id='Best_destinations'>
+                            <p>BEST DESTINATIONS AROUND THE WORLD</p>
+                        </div>
+                        <div id='Travel' style={stroke}>
+                            <p>Travel, enjoy <br /> and live a new <br /> and full life</p>
+                        </div>
+                        <div id='Wicket'>
+                            <p>Built Wicket longer admire do barton vanity itself do in it. <br /> Preferred to sportsmen it engrossed listening. Park gate <br /> sell they west hard for the.</p>
+                        </div>
+                        <div id='play'>
+                            <a href="#" id='Find_out'>Find out more</a>
+                            <img src={Play} className="play_button" alt="Play button" />
+                            <p id='demo'>Play Demo</p>
+                        </div>
+                    </div>
+                    <div id='Woman_image'>
+                        <img src={Woman} className='Woman' alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className='category' >
+                <div id='category_header'>
+                    <h3>CATEGORY</h3>
+                    <h2>We Offer Best Serivces</h2>
+                </div>
+                <div id='cards' style={Rectangle}>
+                    <div className='categories'>
+                        <img src={weather} alt="" />
+                        <p className='category_title'>Calculated Weather</p>
+                        <p className='category_text'>Built Wicket longer do barton vanity itself do in it.</p>
+                    </div>
+                    <div className='categories' id='flight_container'>
+                        <img src={flights} alt="" id='flight' />
+                        <p className='category_title'>Best Flights</p>
+                        <p className='category_text'>Engrossed listeneng. Park gate sell they west hard for the.</p>
+                    </div>
+                    <div className='categories'>
+                        <img src={events} alt="" />
+                        <p className='category_title'>Local Events</p>
+                        <p className='category_text'>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                    </div>
+                    <div className='categories'>
+                        <img src={customization} alt="" />
+                        <p className='category_title'>Customization</p>
+                        <p className='category_text'>We deliver outsourced aviation services for military customers</p>
+                    </div>
+                </div>
+            </div>
+            <div className='destination'>
+                <div id='destination_header'>
+                    <h3>Top Selling</h3>
+                    <h2>Top Destinations</h2>
+                </div>
+                <div id='destination_cards' style={Spiral_style}>
+                    <div className='destinations'>
+                        {/* <img src={Rome} alt="" className='destination_images'/> */}
+                        <div id='destination_info' style={Rome_style}>
+                            <div id='destination_inf'>
+                                <p className='destination_title' >Rome, Italy</p>
+                                <p className='destination_price'>$5,42k</p>
+                            </div>
+                            <div id='destination_length'>
+                                <img src={Navigate} alt="" className='Navigate'/>
+                                <p>10 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='destinations'>
+                        {/* <img src={Rome} alt="" className='destination_images'/> */}
+                        <div id='destination_info' style={Europe_style}>
+                            <div id='destination_inf'>
+                                <p className='destination_title' >London, UK</p>
+                                <p className='destination_price'>$4.2k</p>
+                            </div>
+                            <div id='destination_length'>
+                                <img src={Navigate} alt="" className='Navigate'/>
+                                <p>10 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='destinations'>
+                        {/* <img src={Rome} alt="" className='destination_images'/> */}
+                        <div id='destination_info' style={London_style}>
+                            <div id='destination_inf'>
+                                <p className='destination_title' >Full Europe</p>
+                                <p className='destination_price'>$15k</p>
+                            </div>
+                            <div id='destination_length'>
+                                <img src={Navigate} alt="" className='Navigate'/>
+                                <p>10 Days Trip</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='book'>
+                <div id='book_left'>
+                    <div id='book_header'>
+                        <p>Easy and Fast</p>
+                        <h2>Book Your Next Trip <br /> In 3 Easy Steps</h2>
+                    </div>
+                    <div id='book_cards' >
+                        <div className='booking'>
+                            <div id='booking_info'>
+                                <div id='booking_infog'>
+                                    <img src={Destination} alt="" />
+                                </div>
+                                <div id='booking_text'>
+                                    <h2>Choose Destination</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Assumenda, !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='booking'>
+                            <div id='booking_info'>
+                                <div id='booking_infog'>
+                                    <img src={Payment} alt="" />
+                                </div>
+                                <div id='booking_text'>
+                                    <h2>Make Payment</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Assumenda, !</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='booking'>
+                            <div id='booking_info'>
+                                <div id='booking_infog'>
+                                    <img src={Airport} alt="" />
+                                </div>
+                                <div id='booking_text'>
+                                    <h2>Reach Airport on Selected Date</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Assumenda, !</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id='book_right'>
+                    <div id='book_drop_shadow'>
+                        <div id='big_book'>
+                            <img src={Greece} alt="" id='Greece'/>
+                            <div id='big_book_info'>
+                                <h2>Trip to Greece</h2>
+                                <p>14-29 June|  by Robbin joseph</p>
+                                <div id='big_book_icons'>
+                                    <img src={Leaf} alt="" className='icon'/>
+                                    <img src={Map} alt="" className='icon'/>
+                                    <img src={Send} alt="" className='icon'/>
+                                </div>
+                                <div id='building_div'>
+                                    <img src={Building} alt="" />
+                                    <p>24 people going</p>
+                                    <img src={Heart} alt="" id='Heart'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='small_book'>
+                        <img src={Castle} alt="" id='Castle'/>
+                        <div id='small_book_info'>
+                            <p>Ongoing</p>
+                            <h2>Trip to rome</h2>
+                            <div id='completed'>
+                                <p id='fourty'>40% </p> 
+                                <p id='pcompleted'>completed</p>
+                            </div>
+                            <div id='progress_bar'>
+                                
+                            </div>
+                            <div id='bar'>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='testimonials'>
+                <div id='testimonial_header'>
+                    <p>Testimonials</p>
+                    <h2>What People Say <br /> About Us.</h2>
+                    <img src={Slide} alt="" id='slide'/>
+                </div>
+                <div id='testimonials'>
+                    
+                    <div className='testimonial' id='chris'>
+                        <p>"On the Windows talking painted pasture yet its <br /> express parties use. Sure last upon he same as <br /> knew next. Of believedd or diverted no."</p>
+                        <h3>Chris Thomas</h3>
+                        <p>CEO of Red Button</p>
+                    </div>
+                    <div className='testimonial' id='mike'>
+                        <p>"On the Windows talking painted pasture yet its <br /> express parties use. Sure last upon he same as <br /> knew next. Of believedd or diverted no."</p>
+                        <h3>Mike taylor</h3>
+                        <p>Lahore, Pakistan</p>
+                    </div>
+                    <img src={Mike} alt="" />
+                </div>
+                <img src={Pagination} alt="" id='arrows'/>
+            </div>
+            <div className='sponsors'>
+                <img src={Axon} alt="" />
+                <img src={Jetstar} alt="" id='Jetstar'/>
+                <img src={Expedia} alt="" id='Expedia'/>
+                <img src={Qantas} alt="" id='Qantas'/>
+                <img src={Alitalia} alt="" id='Alitalia'/>
+            </div>
+            <div className='subscribe' style={Subscribe_style}>
+                <p>Subscribe to get information, latest news and other <br /> interesting offers about Jadoo</p>
+                <div id='subscribe_form'>
+                    <form action="">
+                        <input type="email" placeholder='Your email'/>
+                    </form>
+                    <button type='Submit'>Subscribe</button>
+                </div>
+                <img src={Subscribe} alt=""  id='tele'/>
+                <img src={Subscribe_edge} alt=""id='edge'/>
+                <img src={Mail} alt="" id='mail'/>
+            </div>
+            <div className='footer'>
+                <div id='footer_flex'>
+                    <div id='Jadoo' className='footerstuff'>
+                        <img src={Jadoo_footer} alt="" id='Jadoo_footer'/>
+                        <p>Book your trip in minute, get full <br /> Control for much longer.</p>
+                    </div>
+                    <div id='company' className='footerstuff'>
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Mobile</a></li>
+                        </ul>
+                    </div>
+                    <div id='contact' className='footerstuff'>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="">Help/FAQ</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">Affiliates</a></li>
+                        </ul>
+                    </div>
+                    <div id='more' className='footerstuff'>
+                        <h3>More</h3>
+                        <ul>
+                            <li><a href="">Airlinefees</a></li>
+                            <li><a href="">Airline</a></li>
+                            <li><a href="">Low fare tips</a></li>
+                        </ul>
+                    </div>
+                    <div id='app' className='footerstuff'>
+                        <div id='socials'>
+                            <img src={Facebook} alt="" className='social'/>
+                            <img src={Instagram} alt="" className='social'/>
+                            <img src={Twitter} alt="" className='social'/>
+                        </div>
+                        <p>Discover our app</p>
+                        <div id='App_stores'>
+                            <img src={Play_store} alt="" className='store'/>
+                            <img src={Apple_store} alt="" className='store'/>
+                        </div>
+                    </div>
+                </div>
+                <marquee behavior="" direction="left" scrollamount='20'><p id='copyright'>All rights reserved@jadoo.co</p></marquee>
+            </div>
+        </div>
+    )
+}
+
+export default Home
